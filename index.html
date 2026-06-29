@@ -30,14 +30,30 @@
             color: #ff3b3b !important;
         }
 
-        .carousel-item img {
-            height: 500px;
-            object-fit: cover;
-        }
+        .carousel-item img{
+    width:100%;
+    height:550px;
+    object-fit:cover;
+}
 
-        .team-photo {
-            width: 200px;
-            height: 200px;
+@media (max-width:768px){
+    .carousel-item img{
+        height:250px;
+    }
+}
+
+      .team-photo{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #ff3b3b;
+    transition:0.4s;
+}
+
+.team-photo:hover{
+    transform:scale(1.08);
+}
             object-fit: cover;
             border: 4px solid #ff3b3b;
         }
@@ -106,22 +122,23 @@
             z-index: 1000;
         }
 
-        .floating-tg:hover {
-            background-color: #ff1a1a;
-        }
-   <style>
-    /* ... your other CSS rules ... */
+       <style>
+...
+.floating-tg:hover {
+    background-color: #ff1a1a;
+}
 
-    /* Add this inside the style tag */
-    .card {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .card-body {
-        flex: 1;
-    }
-</style> `
+/* Make cards equal height */
+.card{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.card-body{
+    flex:1;
+}
+</style>
 
 </head>
 
@@ -160,7 +177,7 @@
         <div class="carousel-item">
             <img src="Images/img_1.png" class="d-block w-100">
         </div>
-[4/18/2026 7:52 AM] Yenn B: <div class="carousel-item">
+<div class="carousel-item">
             <img src="Images/img_2.png" class="d-block w-100">
         </div>
     </div>
